@@ -1,4 +1,4 @@
-# Spark-QueryDSL Demo
+# Spark-QueryDSL-Thymeleaf Demo
 
 This is a demonstration of the use of QueryDSL code generation plus the Spark Java webapp framework to generate tiny database-accessing web applications with minimal code. 
 
