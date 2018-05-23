@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spark Java Query DSL ThymeLeaf Demo</title>
+<style>
+span, input {
+    margin: 5px;
+}
+label {
+ 	font-family: arial, sans-serif;
+}
+</style>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/js/searchAndReplace.js" type="text/javascript"></script> -->
+</head>
+<body>
+	<h1>Search And Replace</h1>
+	<form action="/subjects" method="post">
+		<label>Search: </label>
+        <input type="text" name="subject"/>
+		<button type="submit">Find</button><br/>
+
+		<label>Replace: </label>
+        <input type="text" name="replace"/>
+  		<button type="submit" onclick="form.action='/replace'">Replace</button>
+	</form>
+</body>
+</html>

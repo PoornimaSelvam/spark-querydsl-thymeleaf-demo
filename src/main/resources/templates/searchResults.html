@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"></meta>
+<title>Search Results</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+	<div id="searchResults">
+	<table>
+		<thead>
+			<th>Id</th>
+			<th>SearchTerm</th>
+			<th>SubjectText</th>
+		</thead>
+		<tbody>
+            <tr th:each="term : ${subjectTerms}" th:with="data=${term.toArray()}">
+                <td th:text="${data[1]}"/>
+                <td th:text="${data[0]}"/>
+                <td th:text="${data[2]}"/>
+            </tr>
+        </tbody>
+	</table>
+	</div>
+</body>
+</html>
