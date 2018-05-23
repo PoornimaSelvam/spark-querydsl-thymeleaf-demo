@@ -18,6 +18,8 @@ Run the resulting JAR (ending with "jar-with-dependencies") as follows:
 
 ```
 java -jar {jar file}
+
+Eg: java -jar target/spark-querydsl-thymeleaf-demo-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 ## Accessing the running applications
